@@ -1,0 +1,828 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HOMEPAGE</title>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+    <script src="../path/to/flowbite/dist/flowbite.min.js"></script>
+    <link
+      href="https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.min.css"
+      rel="stylesheet"
+    />
+
+    <script src="https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body
+    class="md:h-full md:min-h-screen md:bg-cover md:bg-center md:bg-fixed font-['Quicksand'] bg-fixed bg-cover bg-center bg-no-repeat bg-[url('bg.png')]"
+  >
+    <nav class="fixed w-screen z-10 bg-[#004e64]">
+      <div class="text-center md:px-36">
+        <div
+          class="max-w-screen-xl  flex flex-wrap items-center justify-between mx-auto p-4"
+        >
+          <a href="" class="flex items-center space-x-3 rtl:space-x-reverse">
+            <img src="newwww png.png" class="h-10" alt="Flowbite Logo" />
+            <span
+              class="self-center text-2xl font-extrabold whitespace-nowrap dark:text-white"
+            ></span>
+          </a>
+          <button
+            data-collapse-toggle="navbar-default"
+            type="button"
+            class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
+            aria-controls="navbar-default"
+            aria-expanded="false"
+          >
+            <span class="sr-only">Open main menu</span>
+            <svg
+              class="w-5 h-5"
+              aria-hidden="true"
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 17 14"
+            >
+              <path
+                stroke="currentColor"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M1 1h15M1 7h15M1 13h15"
+              />
+            </svg>
+          </button>
+
+          <!-- data-aos="fade-right"
+          data-aos-duration="1000"
+          data-aos-easing="ease-in-out"
+          data-aos-mirror="true"
+          data-aos-once="false" -->
+
+          <div class="hidden w-full md:block md:w-auto" id="navbar-default">
+            <ul
+              class="font-medium flex flex-col p-4 md:p-0 mt-4 rounded-lg md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0"
+            >
+              <li>
+                <a
+                  href="#"
+                  data-aos="fade-down"
+                  data-aos-duration="1000"
+                  data-aos-easing="ease-in-out"
+                  class="block py-2 px-3 text-white rounded-sm md:bg-transparent md:text-blue-700 md:p-0 dark:text-white md:dark:text-blue-500"
+                  aria-current="page"
+                  >Home</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  data-aos="fade-down"
+                  data-aos-duration="2000"
+                  data-aos-easing="ease-in-out"
+                  class="block py-2 px-3 text-gray-900 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
+                  >Course
+                </a>
+              </li>
+              <li>
+                <a
+                  href="#"
+                  data-aos="fade-down"
+                  data-aos-duration="3000"
+                  data-aos-easing="ease-in-out"
+                  class="block py-2 px-3 text-gray-900 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
+                  >Scholarship</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  data-aos="fade-down"
+                  data-aos-duration="3000"
+                  data-aos-easing="ease-in-out"
+                  class="block py-2 px-3 text-gray-900 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
+                  >Staff</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  data-aos="fade-down"
+                  data-aos-duration="3000"
+                  data-aos-easing="ease-in-out"
+                  class="block py-2 px-3 text-gray-900 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
+                  >About</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <section
+      class="bg-cover bg-center bg-no-repeat bg-[url('wall.jpg')] md:bg-[url('bg.png')]"
+    >
+      <div class="relative flex place-items-center md:px-40 h-screen px-3">
+        <div class="text-left text-white">
+          <b
+            class="text-xl"
+            data-aos="fade-down"
+            data-aos-duration="1000"
+            data-aos-easing="ease-in-out"
+            data-aos-mirror="true"
+            data-aos-once="false"
+            >Welcome to</b
+          >
+          <div
+            class="mt-2"
+            data-aos="fade-left"
+            data-aos-duration="1000"
+            data-aos-easing="ease-in-out"
+            data-aos-mirror="true"
+            data-aos-once="false"
+          >
+            <b class="font-bold text-5xl font-family: Arial"
+              >CENTRAL PANGASINAN SCHOOL OF TECHNOLOGY</b
+            >
+          </div>
+
+          <div
+            class="mt-2"
+            data-aos="fade-up"
+            data-aos-duration="1000"
+            data-aos-easing="ease-in-out"
+            data-aos-mirror="true"
+            data-aos-once="false"
+          >
+            <b class="text-xl">Established 1974</b>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="h-10% bg-[#f1faee] py-2">
+
+      
+
+<div id="default-carousel" class="relative w-full md:hidden "  data-carousel="slide">
+    <!-- Carousel wrapper -->
+    <div class="relative h-56 overflow-hidden   md:h-96">
+         <!-- Item 1 -->
+        <div class="hidden duration-700 ease-in-out" data-carousel-item>
+            <img src="a1.jpg" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+        </div>
+        <!-- Item 2 -->
+        <div class="hidden duration-700 ease-in-out" data-carousel-item>
+            <img src="a2.jpg" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+        </div>
+        <!-- Item 3 -->
+        <div class="hidden duration-700 ease-in-out" data-carousel-item>
+            <img src="a3.jpg" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+        </div>
+        <!-- Item 4 -->
+        <div class="hidden duration-700 ease-in-out" data-carousel-item>
+            <img src="a5.jpg" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+        </div>
+        <!-- Item 5 -->
+        <div class="hidden duration-700 ease-in-out" data-carousel-item>
+            <img src="a4.jpg" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+        </div>
+    </div>
+    <!-- Slider indicators -->
+    <div class="absolute z-30 flex -translate-x-1/2 bottom-5 left-1/2 space-x-3 rtl:space-x-reverse">
+        <button type="button" class="w-3 h-3 rounded-full" aria-current="true" aria-label="Slide 1" data-carousel-slide-to="0"></button>
+        <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 2" data-carousel-slide-to="1"></button>
+        <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 3" data-carousel-slide-to="2"></button>
+        <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 4" data-carousel-slide-to="3"></button>
+        <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 5" data-carousel-slide-to="4"></button>
+    </div>
+    <!-- Slider controls -->
+    <button type="button" class="absolute top-0 start-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none" data-carousel-prev>
+        <span class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
+            <svg class="w-4 h-4 text-white dark:text-gray-800 rtl:rotate-180" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
+                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 1 1 5l4 4"/>
+            </svg>
+            <span class="sr-only">Previous</span>
+        </span>
+    </button>
+    <button type="button" class="absolute top-0 end-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none" data-carousel-next>
+        <span class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
+            <svg class="w-4 h-4 text-white dark:text-gray-800 rtl:rotate-180" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
+                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 9 4-4-4-4"/>
+            </svg>
+            <span class="sr-only">Next</span>
+        </span>
+    </button>
+</div>
+
+
+
+      <div class="hidden md:flex   justify-center gap-10">
+        <div>
+          <img
+            class="w-70 transition-all duration-300 rounded-lg cursor-pointer filter grayscale hover:grayscale-0"
+            src="a1.jpg"
+            alt="image description"
+          />
+        </div>
+
+         <div>
+          <img
+            class="w-70 transition-all duration-300 rounded-lg cursor-pointer filter grayscale hover:grayscale-0"
+            src="a2.jpg"
+            alt="image description"
+          />
+        </div>
+
+        <div>
+          <img
+            class="w-70 h-45 transition-all duration-300 rounded-lg cursor-pointer filter grayscale hover:grayscale-0"
+            src="a3.jpg"
+            alt="image description"
+          />
+        </div>
+
+        <div>
+          <img
+            class="w-70 transition-all duration-300 rounded-lg cursor-pointer filter grayscale hover:grayscale-0"
+            src="a4.jpg"
+            alt="image description"
+          />
+        </div>
+
+        <div>
+          <img
+            class="w-70 transition-all duration-300 rounded-lg cursor-pointer filter grayscale hover:grayscale-0"
+            src="a5.jpg"
+            alt="image description"
+          />
+        </div>
+
+        
+      </div>
+    </section>
+
+    <section class="h-100% min-h-screen bg-[#a2d9ff]">
+      <div
+        data-aos="fade-up"
+        data-aos-duration="1000"
+        data-aos-easing="ease-in-out"
+        data-aos-mirror="true"
+        data-aos-once="false"
+        class="font-bold text-5xl font-family: Arial text-[#1d3557] text-center py-10"
+      >
+        <h1 class="md:text-4xl text-xl">COURSE OFFERED</h1>
+      </div>
+      <div class="grid place-items-center text-white">
+        <div class="md:flex md:place-items-center mx-auto gap-10">
+          <div>
+            <div
+              class="relative inline-block hover:scale-110"
+              data-aos="fade-right"
+              data-aos-duration="1000"
+              data-aos-easing="ease-in-out"
+              data-aos-mirror="true"
+              data-aos-once="false"
+            >
+              <!-- Text overlapping the image -->
+              <b class="absolute top-80 left-2 z-20 text-white text-xl"
+                >Automotive Servicing NCI</b
+              >
+              <b class="absolute top-86 left-2 z-20 text-white text-xl"
+                >59 days</b
+              >
+
+              <!-- Gradient overlay -->
+              <div
+                class="absolute inset-0 w-[100%] bg-gradient-to-r from-black/80 to-black/0 rounded-lg z-10"
+              ></div>
+
+              <!-- Image -->
+              <img
+                src="ats1.jpg"
+                class="w-70 h-full rounded-lg relative z-0"
+                alt="Automotive Servicing"
+              />
+            </div>
+          </div>
+
+          <div>
+            <div
+              class="relative inline-block hover:scale-110"
+              data-aos="fade-up"
+              data-aos-duration="1000"
+              data-aos-easing="ease-in-out"
+              data-aos-mirror="true"
+              data-aos-once="false"
+            >
+              <!-- Text overlapping the image -->
+              <b class="absolute top-80 left-2 z-20 text-white text-xl"
+                >Automotive Servicing NCII</b
+              >
+              <b class="absolute top-86 left-2 z-20 text-white text-xl"
+                >60 days</b
+              >
+
+              <!-- Gradient overlay -->
+              <div
+                class="absolute inset-0 w-[100%] bg-gradient-to-r from-black/80 to-black/0 rounded-lg z-10"
+              ></div>
+
+              <!-- Image -->
+              <img
+                src="nncw.jpg"
+                class="w-70 h-full rounded-lg relative z-0"
+                alt="Automotive Servicing"
+              />
+            </div>
+          </div>
+
+          <div>
+            <div
+              class="relative inline-block hover:scale-110"
+              data-aos="fade-left"
+              data-aos-duration="1000"
+              data-aos-easing="ease-in-out"
+              data-aos-mirror="true"
+              data-aos-once="false"
+            >
+              <!-- Text overlapping the image -->
+              <b class="absolute top-74 left-2 z-20 text-white text-xl"
+                >Electrical Installation and Maintenance NC II</b
+              >
+              <b class="absolute top-87 left-2 z-20 text-white text-xl"
+                >25 days</b
+              >
+
+              <!-- Gradient overlay -->
+              <div
+                class="absolute inset-0 w-[100%] bg-gradient-to-r from-black/80 to-black/0 rounded-lg z-10"
+              ></div>
+
+              <!-- Image -->
+              <img
+                src="eim1.jpg"
+                class="w-70 h-full rounded-lg relative z-0"
+                alt="Automotive Servicing"
+              />
+            </div>
+          </div>
+        </div>
+        <!-- 
+        <b>Automotive Servicing NCI</b>
+        <b>Electrical Installation and Maintenance NC II</b> -->
+      </div>
+
+      <div class="flex justify-center mt-10">
+        <button class="rounded-lg bg-[#1d3557] text-white py-3 px-5">
+          View all images
+        </button>
+      </div>
+      <br />
+    </section>
+
+    
+
+    <section class="h-100% min-h-screen bg-[#f1faee] py-3">
+      <div
+        class="font-bold text-xl md:text-5xl font-family: Arial text-[#003049] text-center py-12"
+      >
+        <!-- ade8f4 -->
+        <h1>HOW TO APPLY FOR SCHOLARSHIP?</h1>
+      </div>
+      <div class="grid text-black text-center gap-3 text-xl">
+        <p class="text-black text-center">
+          Here are the <b class="text-[#03045e]">REQUIREMENTS!</b>
+        </p>
+
+        <div class="md:text-left md:px-40 text-lg px-5">
+          <p>📌 Certified true copy of Official Transcript of record (TOR)</p>
+
+          <p>
+            📌 Certified true copy of Form 137 (Permanent Record if the
+            candidates previous education is Elementary or Secondary Level)
+          </p>
+          <p>📌 PSA birth certificate (xerox copy)</p>
+          <p>
+            📌 Certificate of Marriage (candidates prior to or after enrollment)
+          </p>
+          <p>📌 Certificate of Indigency</p>
+          <p>
+            📌 1x1 ID picture with name tag, with collar and white background
+            (studio type)
+          </p>
+          <p>
+            📌 Passport size ID picture with name tag, with collar and white
+            background (studio type)
+          </p>
+          <br />
+          <p>
+            Beneficiaries should be: 1. Filipino Citizen; 2. Unemployed /
+            underemployed 3. at least 18 years of age at the end of training
+          </p>
+        </div>
+
+        <br />
+
+        <div class="text-2xl py-4">
+          <p>
+            WE are on a <b class="text-[#03045e]"> FIRST COME </b> and
+            <b class="text-[#03045e]">TO COMPLY, FIRST SERVED BASIS‼️</b>
+          </p>
+        </div>
+      </div>
+
+      <section class="h-100% min-h-screen bg-[#f1faee] py-3">
+        <div>
+          <!-- <div class="absolute inset-0 bg-white opacity-70"></div> -->
+          <div
+            class="relative font-bold text-4xl font-family: Arial text-center text-[#004e64] py-10"
+          >
+            <!-- ade8f4 -->
+            <h1
+              class="text-xl md:text-5xl"
+              data-aos="fade-down"
+              data-aos-duration="1000"
+              data-aos-easing="ease-in-out"
+              data-aos-mirror="true"
+              data-aos-once="false"
+            >
+              ORGANIZATIONAL CHART
+            </h1>
+          </div>
+          <div class="relative md:px-80 text-lg">
+            <div class="grid grid-cols-1 md:gap-20">
+              <!-- section 1  -->
+              <div
+                data-aos="fade-right"
+                data-aos-duration="1000"
+                data-aos-easing="ease-in-out"
+                data-aos-mirror="true"
+                data-aos-once="false"
+                class="md:gap-10 group"
+              >
+                <div
+                  class="grid place-items-center rounded-lg shadow-lg p-4 md:flex md:flex-wrap md:gap-10 transition-all duration-500 hover:bg-[#0077B6] hover:bg-[linear-gradient(178deg,rgba(0,119,182,0)_54%,rgba(94,164,255,1)_100%)]"
+                >
+                  <div>
+                    <img
+                      src="boss.jpg"
+                      class="rounded-full md:w-30 w-18 shadow-xl hover:scale-110 transition-transform duration-300"
+                      alt=""
+                    />
+                  </div>
+                  <div class="md:grid md:place-items-center hidden">
+                    <img
+                      src="right-arrow.png"
+                      class="md:w-5 group-hover:brightness-0 group-hover:invert"
+                      alt=""
+                    />
+                  </div>
+                  <div
+                    class="md:place-items-center md:grid text-center text-sm mt-3"
+                  >
+                    <div>
+                      <b class="text-[#004e64] group-hover:text-white"
+                        >Tadeo Leonardo C. Boac</b
+                      >
+                      <p class="group-hover:text-gray-200">
+                        Central Pangasinan School of Technology
+                      </p>
+                      <p class="group-hover:text-gray-200">Registrar</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- section 2  -->
+              <div
+                data-aos="fade-left"
+                data-aos-duration="1000"
+                data-aos-easing="ease-in-out"
+                data-aos-mirror="true"
+                data-aos-once="false"
+                class="md:gap-10 group"
+              >
+                <div
+                  class="grid place-items-center md:justify-end rounded-lg shadow-lg p-4 md:flex md:flex-wrap md:gap-10 transition-all duration-500 hover:bg-[#0077B6] hover:bg-[linear-gradient(178deg,rgba(0,119,182,0)_54%,rgba(94,164,255,1)_100%)]"
+                >
+                  <!-- Text Content -->
+                  <!-- Profile Image -->
+                  <div class="md:hidden">
+                    <img
+                      src="rey.jpg"
+                      class="rounded-full md:w-30 hidden w-18 shadow-xl hover:scale-110 transition-transform duration-300 group-hover:ring-2 group-hover:ring-white"
+                      alt=""
+                    />
+                  </div>
+
+                  <div
+                    class="md:place-items-center md:grid text-center text-sm mt-3 order-1 md:order-none"
+                  >
+                    <div>
+                      <b class="text-[#004e64] group-hover:text-white"
+                        >Reynaldo T. Ramos</b
+                      >
+                      <p class="group-hover:text-gray-200">
+                        Central Pangasinan School of Technology
+                      </p>
+                      <p class="group-hover:text-gray-200">Administrator</p>
+                    </div>
+                  </div>
+                  <!-- Arrow (Desktop only) -->
+                  <div class="md:grid md:place-items-center hidden">
+                    <img
+                      src="left-arrow.png"
+                      class="md:w-5 group-hover:brightness-0 group-hover:invert transition-all duration-300"
+                      alt=""
+                    />
+                  </div>
+                  <!-- Profile Image -->
+                  <div class="">
+                    <div class="md:order-2 md:order-none">
+                      <img
+                        src="rey.jpg"
+                        class="rounded-full md:w-30 w-18 shadow-xl hover:scale-110 transition-transform duration-300 group-hover:ring-2 group-hover:ring-white"
+                        alt=""
+                      />
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- section 3  -->
+              <div
+                data-aos="fade-right"
+                data-aos-duration="1000"
+                data-aos-easing="ease-in-out"
+                data-aos-mirror="true"
+                data-aos-once="false"
+                class="md:gap-10 group"
+              >
+                <div
+                  class="grid place-items-center rounded-lg shadow-lg p-4 md:flex md:flex-wrap md:gap-10 transition-all duration-500 hover:bg-[#0077B6] hover:bg-[linear-gradient(178deg,rgba(0,119,182,0)_54%,rgba(94,164,255,1)_100%)]"
+                >
+                  <div>
+                    <img
+                      src="larry.jpg"
+                      class="rounded-full md:w-30 w-18 shadow-xl hover:scale-110 transition-transform duration-300"
+                      alt=""
+                    />
+                  </div>
+                  <div class="md:grid md:place-items-center hidden">
+                    <img
+                      src="right-arrow.png"
+                      class="md:w-5 group-hover:brightness-0 group-hover:invert"
+                      alt=""
+                    />
+                  </div>
+                  <div
+                    class="md:place-items-center md:grid text-center text-sm mt-3"
+                  >
+                    <div>
+                      <b class="text-[#004e64] group-hover:text-white"
+                        >Larry S. Manangan</b
+                      >
+                      <p class="group-hover:text-gray-200">
+                        Central Pangasinan School of Technology
+                      </p>
+
+                      <p class="group-hover:text-gray-200">
+                        Automotive Servicing NCI & NCII Trainor
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- section 4  -->
+              <div
+                data-aos="fade-left"
+                data-aos-duration="1000"
+                data-aos-easing="ease-in-out"
+                data-aos-mirror="true"
+                data-aos-once="false"
+                class="md:gap-10 group"
+              >
+                <div
+                  class="grid place-items-center md:justify-end rounded-lg shadow-lg p-4 md:flex md:flex-wrap md:gap-10 transition-all duration-500 hover:bg-[#0077B6] hover:bg-[linear-gradient(178deg,rgba(0,119,182,0)_54%,rgba(94,164,255,1)_100%)]"
+                >
+                  <!-- Text Content -->
+                  <!-- Profile Image -->
+                  <div class="md:hidden">
+                    <img
+                      src="franks.jpg"
+                      class="rounded-full md:w-30 hidden w-18 shadow-xl hover:scale-110 transition-transform duration-300 group-hover:ring-2 group-hover:ring-white"
+                      alt=""
+                    />
+                  </div>
+
+                  <div
+                    class="md:place-items-center md:grid text-center text-sm mt-3 order-1 md:order-none"
+                  >
+                    <div>
+                      <b class="text-[#004e64] group-hover:text-white"
+                        >Franco Francisco</b
+                      >
+                      <p class="group-hover:text-gray-200">
+                        Central Pangasinan School of Technology
+                      </p>
+                      <p class="group-hover:text-gray-200">
+                        Electrical Installation and Maintenance NCII Instructor
+                      </p>
+                    </div>
+                  </div>
+                  <!-- Arrow (Desktop only) -->
+                  <div class="md:grid md:place-items-center hidden">
+                    <img
+                      src="left-arrow.png"
+                      class="md:w-5 group-hover:brightness-0 group-hover:invert transition-all duration-300"
+                      alt=""
+                    />
+                  </div>
+                  <!-- Profile Image -->
+                  <div class="">
+                    <div class="md:order-2 md:order-none">
+                      <img
+                        src="franks.jpg"
+                        class="rounded-full md:w-30 w-18 shadow-xl hover:scale-110 transition-transform duration-300 group-hover:ring-2 group-hover:ring-white"
+                        alt=""
+                      />
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- section 5  -->
+              <div
+                data-aos="fade-right"
+                data-aos-duration="1000"
+                data-aos-easing="ease-in-out"
+                data-aos-mirror="true"
+                data-aos-once="false"
+                class="md:gap-10 group"
+              >
+                <div
+                  class="grid place-items-center rounded-lg shadow-lg p-4 md:flex md:flex-wrap md:gap-10 transition-all duration-500 hover:bg-[#0077B6] hover:bg-[linear-gradient(178deg,rgba(0,119,182,0)_54%,rgba(94,164,255,1)_100%)]"
+                >
+                  <div>
+                    <img
+                      src="noli.jpg"
+                      class="rounded-full md:w-30 w-18 shadow-xl hover:scale-110 transition-transform duration-300"
+                      alt=""
+                    />
+                  </div>
+                  <div class="md:grid md:place-items-center hidden">
+                    <img
+                      src="right-arrow.png"
+                      class="md:w-5 group-hover:brightness-0 group-hover:invert"
+                      alt=""
+                    />
+                  </div>
+                  <div
+                    class="md:place-items-center md:grid text-center text-sm mt-3"
+                  >
+                    <div>
+                      <b class="text-[#004e64] group-hover:text-white"
+                        >Noli Quilates</b
+                      >
+                      <p class="group-hover:text-gray-200">
+                        Central Pangasinan School of Technology
+                      </p>
+
+                      <p class="group-hover:text-gray-200">
+                        Electrical Installation and Maintenance NCII Trainor
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- section 6  -->
+              <div
+                data-aos="fade-left"
+                data-aos-duration="1000"
+                data-aos-easing="ease-in-out"
+                data-aos-mirror="true"
+                data-aos-once="false"
+                class="md:gap-10 group"
+              >
+                <div
+                  class="grid place-items-center md:justify-end rounded-lg shadow-lg p-4 md:flex md:flex-wrap md:gap-10 transition-all duration-500 hover:bg-[#0077B6] hover:bg-[linear-gradient(178deg,rgba(0,119,182,0)_54%,rgba(94,164,255,1)_100%)]"
+                >
+                  <!-- Text Content -->
+                  <!-- Profile Image -->
+                  <div class="md:hidden">
+                    <img
+                      src="justine.jpg"
+                      class="rounded-full md:w-30 hidden w-18 shadow-xl hover:scale-110 transition-transform duration-300 group-hover:ring-2 group-hover:ring-white"
+                      alt=""
+                    />
+                  </div>
+
+                  <div
+                    class="md:place-items-center md:grid text-center text-sm mt-3 order-1 md:order-none"
+                  >
+                    <div>
+                      <b class="text-[#004e64] group-hover:text-white"
+                        >Justine De Luna</b
+                      >
+                      <p class="group-hover:text-gray-200">
+                        Central Pangasinan School of Technology
+                      </p>
+                      <p class="group-hover:text-gray-200">
+                        Electrical Installation and Maintenance NCII Trainor
+                      </p>
+                    </div>
+                  </div>
+                  <!-- Arrow (Desktop only) -->
+                  <div class="md:grid md:place-items-center hidden">
+                    <img
+                      src="left-arrow.png"
+                      class="md:w-5 group-hover:brightness-0 group-hover:invert transition-all duration-300"
+                      alt=""
+                    />
+                  </div>
+                  <!-- Profile Image -->
+                  <div class="">
+                    <div class="md:order-2 md:order-none">
+                      <img
+                        src="justine.jpg"
+                        class="rounded-full md:w-30 w-18 shadow-xl hover:scale-110 transition-transform duration-300 group-hover:ring-2 group-hover:ring-white"
+                        alt=""
+                      />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+            <path
+              fill="#a2d9ff"
+              fill-opacity="1"
+              d="M0,224L48,197.3C96,171,192,117,288,122.7C384,128,480,192,576,218.7C672,245,768,235,864,218.7C960,203,1056,181,1152,149.3C1248,117,1344,75,1392,53.3L1440,32L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"
+            ></path>
+          </svg>
+        </div>
+
+        <section class="bg-[#a2d9ff]">
+          <div
+            class="relative font-bold text-4xl font-family: Arial text-center text-[#004e64] py-20"
+          >
+            <!-- ade8f4 -->
+            <h1
+              data-aos="fade-down"
+              data-aos-duration="1000"
+              data-aos-easing="ease-in-out"
+              data-aos-mirror="true"
+              data-aos-once="false"
+            >
+              ABOUT US
+            </h1>
+          </div>
+
+         
+            <footer class="">
+            <div class="grid gap-10 px-10 py-10 md:flex md:flex-wrap md:justify-evenly">
+              <div>
+                <b>Location</b>
+                <p>Montemayor St. Brgy. Poblacion</p>
+                <p>Malasiqui, Philippines</p>
+              </div>
+
+              <div>
+                <b>Contact us</b>
+                <p>0917 508 8152</p>
+                <p>cpst1974@yahoo.com</p>
+              </div>
+
+
+
+
+              <div>
+                <b>Follow Us</b>
+                <br>
+                <a href="https://www.facebook.com/profile.php?id=100089638538257" class="underline">Facebook Page</a>
+              </div>
+            </div>
+            </footer>
+          
+        </section>
+      </section>
+    </section>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+  </body>
+</html>
