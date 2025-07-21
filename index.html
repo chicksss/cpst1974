@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>HOMEPAGE</title>
+    <title>dwseww</title>
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 
     <script src="../path/to/flowbite/dist/flowbite.min.js"></script>
@@ -21,8 +21,9 @@
       rel="stylesheet"
     />
   </head>
+
   <body class="font-['Quicksand']">
-    <nav class="fixed w-screen bg-[#004e64]">
+    <nav class="fixed w-screen bg-[#004e64] z-10 w-full max-w-full">
       <div class="text-center md:px-36">
         <div
           class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4"
@@ -124,16 +125,21 @@
         </div>
       </div>
     </nav>
+
+    <!-- bg-cover bg-center min-h-screen md:bg-center bg-no-repeat bg-[url('wall.jpg')] md:bg-[url('bg.png')] -->
     <section
-      class="bg-cover bg-center min-h-screen md:bg-center bg-no-repeat bg-[url('wall.jpg')] md:bg-[url('bg.png')]"
+      class="relative h-90 grid place-items-center z-6 md:h-full md:bg-center bg-white bg-no-repeat bg-[url('wall.jpg')]"
+      style="background-repeat: no-repeat; background-size: cover"
     >
-      <div class="flex place-items-center md:px-40 h-screen px-3">
-        <div class="text-left text-white">
+      <div class="absolute inset-0 bg-black/70 z-0"></div>
+      <div
+        class="relative md:flex grid place-items-center md:px-40 md:h-screen px-3"
+      >
+        <div class="text-center md:text-left text-white">
           <b
             class="text-xl"
             data-aos="fade-down"
-            data-aos-duration="1000 
-            "
+            data-aos-duration="1000"
             data-aos-easing="ease-in-out"
             data-aos-mirror="true"
             data-aos-once="false"
@@ -141,13 +147,13 @@
           >
           <div
             class="mt-2"
-            data-aos="fade-left"
+            data-aos="fade-in"
             data-aos-duration="1000"
             data-aos-easing="ease-in-out"
             data-aos-mirror="true"
             data-aos-once="false"
           >
-            <b class="font-bold md:text-5xl text-2xl font-family: Arial"
+            <b class="font-bold md:text-4xl text-xl font-family: Arial"
               >CENTRAL PANGASINAN SCHOOL OF TECHNOLOGY</b
             >
           </div>
@@ -166,7 +172,7 @@
       </div>
     </section>
 
-    <section class="w-[100%] bg-[#f1faee] py-2 overflow-x-hidden px-4">
+    <section class="bg-[#f1faee] py-2 px-2 w-full max-w-full overflow-hidden">
       <!-- Mobile Carousel (shown on small screens) -->
       <div
         id="default-carousel"
@@ -174,7 +180,9 @@
         data-carousel="slide"
       >
         <!-- Carousel wrapper -->
-        <div class="relative h-56 sm:h-64 md:h-96 overflow-hidden rounded-lg">
+        <div
+          class="relative h-56 sm:h-64 md:h-96 overflow-hidden rounded-lg z-1"
+        >
           <!-- Item 1 -->
           <div class="hidden duration-700 ease-in-out" data-carousel-item>
             <img
@@ -216,101 +224,6 @@
             />
           </div>
         </div>
-
-        <!-- Slider indicators -->
-        <div
-          class="absolute z-30 flex -translate-x-1/2 bottom-5 left-1/2 space-x-3 rtl:space-x-reverse"
-        >
-          <button
-            type="button"
-            class="w-3 h-3 rounded-full bg-white/50 hover:bg-white"
-            aria-current="true"
-            aria-label="Slide 1"
-            data-carousel-slide-to="0"
-          ></button>
-          <button
-            type="button"
-            class="w-3 h-3 rounded-full bg-white/50 hover:bg-white"
-            aria-current="false"
-            aria-label="Slide 2"
-            data-carousel-slide-to="1"
-          ></button>
-          <button
-            type="button"
-            class="w-3 h-3 rounded-full bg-white/50 hover:bg-white"
-            aria-current="false"
-            aria-label="Slide 3"
-            data-carousel-slide-to="2"
-          ></button>
-          <button
-            type="button"
-            class="w-3 h-3 rounded-full bg-white/50 hover:bg-white"
-            aria-current="false"
-            aria-label="Slide 4"
-            data-carousel-slide-to="3"
-          ></button>
-          <button
-            type="button"
-            class="w-3 h-3 rounded-full bg-white/50 hover:bg-white"
-            aria-current="false"
-            aria-label="Slide 5"
-            data-carousel-slide-to="4"
-          ></button>
-        </div>
-
-        <!-- Slider controls -->
-        <button
-          type="button"
-          class="absolute top-0 start-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
-          data-carousel-prev
-        >
-          <span
-            class="inline-flex items-center justify-center w-8 h-8 sm:w-10 sm:h-10 rounded-full bg-white/30 group-hover:bg-white/50 group-focus:ring-4 group-focus:ring-white/70 group-focus:outline-none"
-          >
-            <svg
-              class="w-4 h-4 text-white rtl:rotate-180"
-              aria-hidden="true"
-              xmlns="http://www.w3.org/2000/svg"
-              fill="none"
-              viewBox="0 0 6 10"
-            >
-              <path
-                stroke="currentColor"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width="2"
-                d="M5 1 1 5l4 4"
-              />
-            </svg>
-            <span class="sr-only">Previous</span>
-          </span>
-        </button>
-        <button
-          type="button"
-          class="absolute top-0 end-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
-          data-carousel-next
-        >
-          <span
-            class="inline-flex items-center justify-center w-8 h-8 sm:w-10 sm:h-10 rounded-full bg-white/30 group-hover:bg-white/50 group-focus:ring-4 group-focus:ring-white/70 group-focus:outline-none"
-          >
-            <svg
-              class="w-4 h-4 text-white rtl:rotate-180"
-              aria-hidden="true"
-              xmlns="http://www.w3.org/2000/svg"
-              fill="none"
-              viewBox="0 0 6 10"
-            >
-              <path
-                stroke="currentColor"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width="2"
-                d="m1 9 4-4-4-4"
-              />
-            </svg>
-            <span class="sr-only">Next</span>
-          </span>
-        </button>
       </div>
 
       <!-- Desktop Grid (shown on medium screens and up) -->
@@ -365,136 +278,103 @@
       </div>
     </section>
 
-    <section class="min-h-screen md:px-40">
-      <div
-        data-aos="fade-up"
-        data-aos-duration="1000"
-        data-aos-easing="ease-in-out"
-        data-aos-mirror="true"
-        data-aos-once="false"
-        class="font-bold text-2xl font-family: Arial text-[#1d3557] text-center py-10"
-      >
-        <h1 class="md:text-4xl text-xl">COURSE OFFERED</h1>
-      </div>
+    <section
+      class="relative py-10 bg-[url('wall.jpg')] bg-center bg-fixed bg-cover w-full max-w-full"
+    >
+      <!-- White overlay -->
+      <div class="absolute inset-0 bg-white/90 z-0"></div>
 
-      <ol class="items-center sm:flex px-10">
-        <li class="relative mb-6 sm:mb-0">
-          <div class="flex items-center">
-            <div
-              class="z-10 flex items-center justify-center w-6 h-6 bg-blue-100 rounded-full ring-0 ring-white dark:bg-blue-900 sm:ring-8 dark:ring-gray-900 shrink-0"
-            >
-              <svg
-                class="w-2.5 h-2.5 text-blue-800 dark:text-blue-300"
-                aria-hidden="true"
-                xmlns="http://www.w3.org/2000/svg"
-                fill="currentColor"
-                viewBox="0 0 20 20"
-              >
-                <path
-                  d="M20 4a2 2 0 0 0-2-2h-2V1a1 1 0 0 0-2 0v1h-3V1a1 1 0 0 0-2 0v1H6V1a1 1 0 0 0-2 0v1H2a2 2 0 0 0-2 2v2h20V4ZM0 18a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V8H0v10Zm5-8h10a1 1 0 0 1 0 2H5a1 1 0 0 1 0-2Z"
-                />
-              </svg>
-            </div>
-            <div
-              class="hidden sm:flex w-full bg-gray-200 h-0.5 dark:bg-gray-700"
-            ></div>
-          </div>
-          <div class="mt-3 sm:pe-8">
-            <h3 class="text-lg font-semibold text-[#003049]">
-              Automotive Servicing NCI
-            </h3>
-            <time
-              class="block mb-2 text-sm font-normal leading-none text-gray-400 dark:text-gray-500"
-              >59 days</time
-            >
-            <p class="text-base font-normal text-gray-500 dark:text-gray-400">
-              Will learn basics troubleshooting and pre delivery inspection
-            </p>
-          </div>
-        </li>
-        <li class="relative mb-6 sm:mb-0">
-          <div class="flex items-center">
-            <div
-              class="z-10 flex items-center justify-center w-6 h-6 bg-blue-100 rounded-full ring-0 ring-white dark:bg-blue-900 sm:ring-8 dark:ring-gray-900 shrink-0"
-            >
-              <svg
-                class="w-2.5 h-2.5 text-blue-800 dark:text-blue-300"
-                aria-hidden="true"
-                xmlns="http://www.w3.org/2000/svg"
-                fill="currentColor"
-                viewBox="0 0 20 20"
-              >
-                <path
-                  d="M20 4a2 2 0 0 0-2-2h-2V1a1 1 0 0 0-2 0v1h-3V1a1 1 0 0 0-2 0v1H6V1a1 1 0 0 0-2 0v1H2a2 2 0 0 0-2 2v2h20V4ZM0 18a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V8H0v10Zm5-8h10a1 1 0 0 1 0 2H5a1 1 0 0 1 0-2Z"
-                />
-              </svg>
-            </div>
-            <div
-              class="hidden sm:flex w-full bg-gray-200 h-0.5 dark:bg-gray-700"
-            ></div>
-          </div>
-          <div class="mt-3 sm:pe-8">
-            <h3 class="text-lg font-semibold text-[#003049]">
-              Automotive Servicing NCII
-            </h3>
-            <time
-              class="block mb-2 text-sm font-normal leading-none text-gray-400 dark:text-gray-500"
-              >Released on December 23, 2021</time
-            >
-            <p class="text-base font-normal text-gray-500 dark:text-gray-400">
-              Get started with dozens of web components and interactive
-              elements.
-            </p>
-          </div>
-        </li>
-        <li class="relative mb-6 sm:mb-0">
-          <div class="flex items-center">
-            <div
-              class="z-10 flex items-center justify-center w-6 h-6 bg-blue-100 rounded-full ring-0 ring-white dark:bg-blue-900 sm:ring-8 dark:ring-gray-900 shrink-0"
-            >
-              <svg
-                class="w-2.5 h-2.5 text-blue-800 dark:text-blue-300"
-                aria-hidden="true"
-                xmlns="http://www.w3.org/2000/svg"
-                fill="currentColor"
-                viewBox="0 0 20 20"
-              >
-                <path
-                  d="M20 4a2 2 0 0 0-2-2h-2V1a1 1 0 0 0-2 0v1h-3V1a1 1 0 0 0-2 0v1H6V1a1 1 0 0 0-2 0v1H2a2 2 0 0 0-2 2v2h20V4ZM0 18a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V8H0v10Zm5-8h10a1 1 0 0 1 0 2H5a1 1 0 0 1 0-2Z"
-                />
-              </svg>
-            </div>
-            <div
-              class="hidden sm:flex w-full bg-gray-200 h-0.5 dark:bg-gray-700"
-            ></div>
-          </div>
-          <div class="mt-3 sm:pe-8">
-            <h3 class="text-lg font-semibold text-[#003049]">
-              Electrical Installation and Maintenance NCII
-            </h3>
-            <time
-              class="block mb-2 text-sm font-normal leading-none text-gray-400 dark:text-gray-500"
-              >Released on January 5, 2022</time
-            >
-            <p class="text-base font-normal text-gray-500 dark:text-gray-400">
-              Get started with dozens of web components and interactive
-              elements.
-            </p>
-          </div>
-        </li>
-      </ol>
+      <!-- Content -->
+      <div class="relative z-10">
+        <div
+          data-aos="fade-up"
+          data-aos-duration="1000"
+          data-aos-easing="ease-in-out"
+          data-aos-mirror="true"
+          data-aos-once="false"
+          class="font-bold text-2xl text-[#1d3557] text-center py-10"
+           
+        >
+          <h1 class="md:text-4xl text-xl">COURSE OFFERED</h1>
+        </div>
 
-      <div class="flex justify-center mt-10 pb-10">
-        <button class="rounded-lg bg-[#1d3557] text-white py-3 px-5">
-          Enroll Now
-        </button>
+        <div class="grid grid-cols-1 gap-10 place-items-center px-4 md:px-6">
+          <div class="text-left md:flex md:gap-20 md:justify-evenly">
+            <!-- Card 1 -->
+            <div
+              data-aos="fade-up"
+              data-aos-duration="1000"
+              data-aos-easing="ease-in-out"
+              data-aos-mirror="true"
+              data-aos-once="false"
+              class="mt-3 "
+            >
+              <h3 class="text-lg font-semibold text-[#003049]">
+                Automotive Servicing NCI
+              </h3>
+              <time class="block mb-2 text-sm text-black dark:text-gray-500">
+                59 days
+              </time>
+              <p class="text-base text-gray-500 dark:text-gray-400">
+                Learn basics troubleshooting,<br />
+                Pre Maintenance Servicing
+              </p>
+              <p class="text-base text-gray-500 dark:text-gray-400">
+                and Pre delivery inspection.
+              </p>
+            </div>
+
+            <!-- Card 2 -->
+            <div
+              data-aos="fade-up"
+              data-aos-duration="1000"
+              data-aos-easing="ease-in-out"
+              data-aos-mirror="true"
+              data-aos-once="false"
+              class="mt-3"
+            >
+              <h3 class="text-lg font-semibold text-[#003049]">
+                Automotive Servicing NCII
+              </h3>
+              <time class="block mb-2 text-sm text-gray-400 dark:text-gray-500">
+                60 days
+              </time>
+              <p class="text-base text-gray-500 dark:text-gray-400">
+                Electrical and Engine Repair and <br />
+                on the job training for 30 days.
+              </p>
+            </div>
+
+            <!-- Card 3 -->
+            <div
+              data-aos="fade-up"
+              data-aos-duration="1000"
+              data-aos-easing="ease-in-out"
+              data-aos-mirror="true"
+              data-aos-once="false"
+              class="mt-3"
+            >
+              <h3 class="text-lg font-semibold text-[#003049]">
+                Electrical Installation and <br />
+                Maintenance NCII
+              </h3>
+              <time class="block mb-2 text-sm text-gray-400 dark:text-gray-500">
+                25 days
+              </time>
+              <p class="text-base text-gray-500 dark:text-gray-400">
+                Learn how to install cctv and
+                <br />
+                troubleshoot.
+              </p>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
 
-    
-    <section class="  md:bg-center bg-[#f1faee] py-1 overflow-x-hidden">
+    <section class="md:bg-center bg-[#edf6f9] py-1 overflow-x-hidden py-10">
       <div
-        class="font-bold text-xl md:text-5xl font-family: Arial text-[#003049] text-center py-12 px-4"
+        class="font-bold text-xl md:text-4xl font-family: Arial text-[#003049] text-center px-4"
       >
         <h1>HOW TO APPLY FOR SCHOLARSHIP?</h1>
       </div>
@@ -503,23 +383,23 @@
           Here are the <b class="text-[#03045e]">REQUIREMENTS!</b>
         </p>
 
-        <div class="md:text-left md:px-40 text-lg px-5">
-          <p>📌 Certified true copy of Official Transcript of record (TOR)</p>
-
+        <div class="md:text-left text-left mt-5 md:px-40 text-lg px-5">
           <p>
+            📌 Certified true copy of Official Transcript of record (TOR)
+
+            <br />
             📌 Certified true copy of Form 137 (Permanent Record if the
             candidates previous education is Elementary or Secondary Level)
-          </p>
-          <p>📌 PSA birth certificate (xerox copy)</p>
-          <p>
+            <br />
+            📌 PSA birth certificate (xerox copy)
+            <br />
             📌 Certificate of Marriage (candidates prior to or after enrollment)
-          </p>
-          <p>📌 Certificate of Indigency</p>
-          <p>
+            <br />
+            📌 Certificate of Indigency
+            <br />
             📌 1x1 ID picture with name tag, with collar and white background
             (studio type)
-          </p>
-          <p>
+            <br />
             📌 Passport size ID picture with name tag, with collar and white
             background (studio type)
           </p>
@@ -541,8 +421,7 @@
       </div>
     </section>
 
-
-     <section class="h-100% min-h-screen md:bg-center bg-[#f1faee] py-3">
+    <section class="h-100% min-h-screen md:bg-center bg-[#edf6f9] py-3">
       <div>
         <!-- <div class="absolute inset-0 bg-white opacity-70"></div> -->
         <div
@@ -550,7 +429,7 @@
         >
           <!-- ade8f4 -->
           <h1
-            class="text-xl md:text-5xl"
+            class="text-xl md:text-4xl"
             data-aos="fade-down"
             data-aos-duration="1000"
             data-aos-easing="ease-in-out"
@@ -867,13 +746,15 @@
             </div>
           </div>
         </div>
-        
+      </div>
     </section>
 
-
-  <section class="bg-[#a2d9ff] overflow-x-hidden mx-auto">
+    <section
+      class="relative bg-[#a2d9ff] overflow-x-hidden mx-auto bg-[url('bg.png')] bg-center bg-fixed bg-cover w-full max-w-full"
+    >
+      <div class="absolute inset-0 bg-[#003049]/80 z-0"></div>
       <div
-        class=" font-bold md:text-4xl font-family: Arial text-center text-[#004e64] py-10"
+        class="font-bold md:text-4xl font-family: Arial text-center text-xl py-10"
       >
         <!-- ade8f4 -->
         <h1
@@ -882,39 +763,39 @@
           data-aos-easing="ease-in-out"
           data-aos-mirror="true"
           data-aos-once="false"
+          class="relative text-white"
         >
           ABOUT US
         </h1>
       </div>
 
-     
-        <div
-          class="grid gap-10 px-10 py-10 md:flex md:flex-wrap md:justify-evenly"
-        >
-          <div>
-            <b>Location</b>
-            <p>Montemayor St. Brgy. Poblacion</p>
-            <p>Malasiqui, Philippines</p>
-          </div>
-
-          <div>
-            <b>Contact us</b>
-            <p>0917 508 8152</p>
-            <p>cpst1974@yahoo.com</p>
-          </div>
-
-          <div>
-            <b>Follow Us</b>
-            <br />
-            <a
-              href="https://www.facebook.com/profile.php?id=100089638538257"
-              class="underline"
-              >Facebook Page</a
-            >
-          </div>
+      <div
+        class="grid gap-10 px-10 py-10 md:flex md:flex-wrap md:justify-evenly relative text-white"
+      >
+        <div>
+          <b>Location</b>
+          <p>Montemayor St. Brgy. Poblacion</p>
+          <p>Malasiqui, Philippines</p>
         </div>
-      
+
+        <div>
+          <b>Contact us</b>
+          <p>0917 508 8152</p>
+          <p>cpst1974@yahoo.com</p>
+        </div>
+
+        <div>
+          <b>Follow Us</b>
+          <br />
+          <a
+            href="https://www.facebook.com/profile.php?id=100089638538257"
+            class="underline"
+            >Facebook Page</a
+          >
+        </div>
+      </div>
     </section>
+
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
       AOS.init();
